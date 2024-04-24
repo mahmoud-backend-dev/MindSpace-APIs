@@ -1,0 +1,1 @@
+ALTER TABLE `appointments` ADD `status` ENUM("0","1","2") NOT NULL DEFAULT '0' COMMENT '\"0 : pending, 1: completed,2 : canceled\"' AFTER `slotEndTime`;

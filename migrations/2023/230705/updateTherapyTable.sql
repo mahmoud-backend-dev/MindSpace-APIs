@@ -1,0 +1,1 @@
+ALTER TABLE `therapies` ADD `isDeleted` BOOLEAN NOT NULL DEFAULT FALSE AFTER `therapiName`;

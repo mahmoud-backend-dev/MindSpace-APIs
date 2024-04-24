@@ -1,0 +1,1 @@
+ALTER TABLE `users` ADD `instagramId` TEXT NOT NULL AFTER `socketId`;

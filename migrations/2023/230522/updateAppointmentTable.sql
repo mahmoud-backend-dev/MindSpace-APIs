@@ -1,0 +1,1 @@
+ALTER TABLE `appointments` CHANGE `status` `status` ENUM('0','1','2','3','4') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '0' COMMENT '0 : upcoming, 1: completed,2 : canceled ,3:ongoing,4:not Attemted';

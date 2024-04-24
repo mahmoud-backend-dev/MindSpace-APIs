@@ -1,0 +1,1 @@
+ALTER TABLE `reports` ADD `reportUrl` TEXT NOT NULL AFTER `interventionNeeded`;

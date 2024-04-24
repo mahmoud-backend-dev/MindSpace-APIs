@@ -1,0 +1,1 @@
+ALTER TABLE `payments` ADD `invoiceUrl` TEXT NOT NULL AFTER `referenceNo`;

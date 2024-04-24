@@ -1,0 +1,1 @@
+ALTER TABLE `users` ADD `eCountryCode` VARCHAR(10) NOT NULL AFTER `mobileNumber`, ADD `emergencyNumber` VARCHAR(15) NOT NULL AFTER `eCountryCode`;  

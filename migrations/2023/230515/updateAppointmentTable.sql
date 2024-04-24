@@ -1,0 +1,1 @@
+ALTER TABLE `appointments` ADD `invoice` TEXT NOT NULL AFTER `channelName`;

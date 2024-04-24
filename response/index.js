@@ -1,0 +1,16 @@
+module.exports = {
+  admins: require("./adminsObject"),
+  users: require("./usersObject"),
+  therapies: require("./therapiesObject"),
+  journals: require("./journalsObject"),
+  roleresources: require("./roleresourcesObject"),
+  languages: require("./languagesObject"),
+  cms: require("./cmsObject"),
+  appointment: require("./appointmentObject"),
+  contactUs: require("./contactUsObject"),
+  feedback: require("./feedbackObject"),
+  socket: require("./socketObject"),
+  reviews: require("./reviewsObject"),
+  banners: require("./bannersObject"),
+  reports: require("./reportsObject"),
+};

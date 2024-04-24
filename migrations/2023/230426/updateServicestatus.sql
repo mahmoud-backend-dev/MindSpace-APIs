@@ -1,0 +1,1 @@
+ALTER TABLE `appointments` CHANGE `serviceStatus` `serviceStatus` ENUM('0','1','2','3','4','5','6') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '0' COMMENT '\"0: created,1: accepted,2: declined, 3: completed,4: started,5: running,6: timeout \"';
