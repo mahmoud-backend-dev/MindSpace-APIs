@@ -1,0 +1,1077 @@
+{
+	"info": {
+		"_postman_id": "74d15475-306e-4838-ac4e-8ac6e2816a84",
+		"name": "Mindscape",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23942854"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "get all users",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"value": "Dart/2.19 (dart:io)",
+								"key": "user-agent"
+							},
+							{
+								"value": "application/json",
+								"key": "content-type"
+							},
+							{
+								"value": "Bearer lC3polLeaSwXJIaJUUxBXbuseHXDjKuCmep8lCeEYS2KJzCBVum5vNV34LVP03vtoRi25rFiSVthDbbXPR5XdAFEJwcpPQVNBqkeetwJ2E3ZB8d2R2aBtphZag1J0sWhO9cP18Ku6UM9",
+								"key": "mindscapetoken"
+							},
+							{
+								"value": "prod-api.trymindscape.com",
+								"key": "host"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEzMiwiZGV2aWNlSWQiOiJDMEZCQjU5MC1GNUNGLTRDNzYtODI5OS0xQjc0NTRBQzM0MTAiLCJpYXQiOjE3MDY5MDE5ODd9.-wd5cyApxi1t1Szu-JiXGg20b3CoDCOsTf3f0u9hEeA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://prod-api.trymindscape.com/api/v1/users?&limit=500&page=1",
+							"protocol": "https",
+							"host": [
+								"prod-api",
+								"trymindscape",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users"
+							],
+							"query": [
+								{
+									"key": null,
+									"value": null
+								},
+								{
+									"key": "limit",
+									"value": "500"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get the names of therapists booked by user",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"value": "Dart/2.19 (dart:io)",
+								"key": "user-agent"
+							},
+							{
+								"value": "prod-api.trymindscape.com",
+								"key": "host"
+							},
+							{
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUxNiwiZGV2aWNlSWQiOiI1NTM4OTI1MS1DOTMzLTRBMkQtOUYyRi04MzQ3RDcwNzRGRDEiLCJpYXQiOjE3MDQ4OTExMTJ9.K5ZHdrs3kRTprxhDuwOxyzSrc4gIbgFlAHx6eBIHl2I",
+								"key": "authorization"
+							},
+							{
+								"value": "application/json",
+								"key": "content-type"
+							},
+							{
+								"value": "Bearer lC3polLeaSwXJIaJUUxBXbuseHXDjKuCmep8lCeEYS2KJzCBVum5vNV34LVP03vtoRi25rFiSVthDbbXPR5XdAFEJwcpPQVNBqkeetwJ2E3ZB8d2R2aBtphZag1J0sWhO9cP18Ku6UM9",
+								"key": "mindscapetoken"
+							}
+						],
+						"url": {
+							"raw": "https://prod-api.trymindscape.com/api/v1/users/getAllDoctorsByPatientId/U2FsdGVkX19OQyOaKQOvE3jXygTYWq4QIV3pMmdgpVEe1Q2u3A4l?limit=25&page=1",
+							"protocol": "https",
+							"host": [
+								"prod-api",
+								"trymindscape",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"getAllDoctorsByPatientId",
+								"U2FsdGVkX19OQyOaKQOvE3jXygTYWq4QIV3pMmdgpVEe1Q2u3A4l"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "25"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get user invoices",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"value": "Dart/2.19 (dart:io)",
+								"key": "user-agent"
+							},
+							{
+								"value": "prod-api.trymindscape.com",
+								"key": "host"
+							},
+							{
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUxNiwiZGV2aWNlSWQiOiI1NTM4OTI1MS1DOTMzLTRBMkQtOUYyRi04MzQ3RDcwNzRGRDEiLCJpYXQiOjE3MDQ4OTExMTJ9.K5ZHdrs3kRTprxhDuwOxyzSrc4gIbgFlAHx6eBIHl2I",
+								"key": "authorization"
+							},
+							{
+								"value": "application/json",
+								"key": "content-type"
+							},
+							{
+								"value": "Bearer lC3polLeaSwXJIaJUUxBXbuseHXDjKuCmep8lCeEYS2KJzCBVum5vNV34LVP03vtoRi25rFiSVthDbbXPR5XdAFEJwcpPQVNBqkeetwJ2E3ZB8d2R2aBtphZag1J0sWhO9cP18Ku6UM9",
+								"key": "mindscapetoken"
+							}
+						],
+						"url": {
+							"raw": "https://prod-api.trymindscape.com/api/v1/invoice?limit=20&page=1",
+							"protocol": "https",
+							"host": [
+								"prod-api",
+								"trymindscape",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"invoice"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "20"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get user reports",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"value": "Dart/2.19 (dart:io)",
+								"key": "user-agent"
+							},
+							{
+								"value": "prod-api.trymindscape.com",
+								"key": "host"
+							},
+							{
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUxNiwiZGV2aWNlSWQiOiI1NTM4OTI1MS1DOTMzLTRBMkQtOUYyRi04MzQ3RDcwNzRGRDEiLCJpYXQiOjE3MDQ4OTExMTJ9.K5ZHdrs3kRTprxhDuwOxyzSrc4gIbgFlAHx6eBIHl2I",
+								"key": "authorization"
+							},
+							{
+								"value": "application/json",
+								"key": "content-type"
+							},
+							{
+								"value": "Bearer lC3polLeaSwXJIaJUUxBXbuseHXDjKuCmep8lCeEYS2KJzCBVum5vNV34LVP03vtoRi25rFiSVthDbbXPR5XdAFEJwcpPQVNBqkeetwJ2E3ZB8d2R2aBtphZag1J0sWhO9cP18Ku6UM9",
+								"key": "mindscapetoken"
+							}
+						],
+						"url": {
+							"raw": "https://prod-api.trymindscape.com/api/v1/reports?limit=20&page=1&search=&role=1",
+							"protocol": "https",
+							"host": [
+								"prod-api",
+								"trymindscape",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"reports"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "20"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "search",
+									"value": ""
+								},
+								{
+									"key": "role",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout any user",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"value": "Dart/2.19 (dart:io)",
+								"key": "user-agent"
+							},
+							{
+								"value": "prod-api.trymindscape.com",
+								"key": "host"
+							},
+							{
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUxNiwiZGV2aWNlSWQiOiI1NTM4OTI1MS1DOTMzLTRBMkQtOUYyRi04MzQ3RDcwNzRGRDEiLCJpYXQiOjE3MDQ4OTExMTJ9.K5ZHdrs3kRTprxhDuwOxyzSrc4gIbgFlAHx6eBIHl2I",
+								"key": "authorization"
+							},
+							{
+								"value": "application/json",
+								"key": "content-type"
+							},
+							{
+								"value": "Bearer lC3polLeaSwXJIaJUUxBXbuseHXDjKuCmep8lCeEYS2KJzCBVum5vNV34LVP03vtoRi25rFiSVthDbbXPR5XdAFEJwcpPQVNBqkeetwJ2E3ZB8d2R2aBtphZag1J0sWhO9cP18Ku6UM9",
+								"key": "mindscapetoken"
+							}
+						],
+						"url": {
+							"raw": "https://prod-api.trymindscape.com/api/v1/users/logout",
+							"protocol": "https",
+							"host": [
+								"prod-api",
+								"trymindscape",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"value": "Dart/2.19 (dart:io)",
+								"key": "user-agent"
+							},
+							{
+								"value": "application/json",
+								"key": "content-type"
+							},
+							{
+								"value": "Bearer lC3polLeaSwXJIaJUUxBXbuseHXDjKuCmep8lCeEYS2KJzCBVum5vNV34LVP03vtoRi25rFiSVthDbbXPR5XdAFEJwcpPQVNBqkeetwJ2E3ZB8d2R2aBtphZag1J0sWhO9cP18Ku6UM9",
+								"key": "mindscapetoken"
+							},
+							{
+								"value": "prod-api.trymindscape.com",
+								"key": "host"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"loginType\":0,\"role\":null,\"email\":\"sw2x+2@securehoot.com\",\"password\":\"Mohamm123d\",\"googleId\":null,\"facebookId\":null,\"appleId\":null,\"deviceType\":\"I\",\"deviceToken\":\"fI8avtErnk5TlVq_lFjJFz:APA91bF-pRLlGUppiWfmCE6SQ0QP1PH5Uh5rklba7LiyJlVKO7zZ91bTtDEUZ4LhatLeW8tElYtpqIGS6P77sZ55oJalZpUOyfTIfpUUNgX-nl8DJla57T7PsPyu3fONx6ZPGriC07bs\",\"voIpToken\":\"70119d5f243db436b15c26c79139ca177d636297334c100739623fd05b914ec2\",\"timezone\":\"Asia/Kuwait\",\"deviceId\":\"55389251-C933-4A2D-9F2F-8347D7074FD1\"}"
+						},
+						"url": {
+							"raw": "https://prod-api.trymindscape.com/api/v1/users/login",
+							"protocol": "https",
+							"host": [
+								"prod-api",
+								"trymindscape",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all registered users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"value": "Dart/2.19 (dart:io)",
+								"key": "user-agent"
+							},
+							{
+								"value": "prod-api.trymindscape.com",
+								"key": "host"
+							},
+							{
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUxNiwiZGV2aWNlSWQiOiI1NTM4OTI1MS1DOTMzLTRBMkQtOUYyRi04MzQ3RDcwNzRGRDEiLCJpYXQiOjE3MDQ5MzAzODJ9.HRCoOIwF9Oa9yTTmnKncSomhKI3CwTlIu85IIE7tfKU",
+								"key": "authorization"
+							},
+							{
+								"value": "application/json",
+								"key": "content-type"
+							},
+							{
+								"value": "Bearer lC3polLeaSwXJIaJUUxBXbuseHXDjKuCmep8lCeEYS2KJzCBVum5vNV34LVP03vtoRi25rFiSVthDbbXPR5XdAFEJwcpPQVNBqkeetwJ2E3ZB8d2R2aBtphZag1J0sWhO9cP18Ku6UM9",
+								"key": "mindscapetoken"
+							}
+						],
+						"url": {
+							"raw": "https://prod-api.trymindscape.com/api/v1/users?limit=500&page=1",
+							"protocol": "https",
+							"host": [
+								"prod-api",
+								"trymindscape",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "500"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete any user",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"value": "Dart/2.19 (dart:io)",
+								"key": "user-agent"
+							},
+							{
+								"value": "prod-api.trymindscape.com",
+								"key": "host"
+							},
+							{
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUxNiwiZGV2aWNlSWQiOiI1NTM4OTI1MS1DOTMzLTRBMkQtOUYyRi04MzQ3RDcwNzRGRDEiLCJpYXQiOjE3MDQ5MzAzODJ9.HRCoOIwF9Oa9yTTmnKncSomhKI3CwTlIu85IIE7tfKU",
+								"key": "authorization"
+							},
+							{
+								"value": "application/json",
+								"key": "content-type"
+							},
+							{
+								"value": "Bearer lC3polLeaSwXJIaJUUxBXbuseHXDjKuCmep8lCeEYS2KJzCBVum5vNV34LVP03vtoRi25rFiSVthDbbXPR5XdAFEJwcpPQVNBqkeetwJ2E3ZB8d2R2aBtphZag1J0sWhO9cP18Ku6UM9",
+								"key": "mindscapetoken"
+							}
+						],
+						"url": {
+							"raw": "https://prod-api.trymindscape.com/api/v1/users/document/U2FsdGVkX18jaQETx4kBMC7LTs1L2a3S4hONwBDxk4QcIrl9vF0e1Q2u3A4l",
+							"protocol": "https",
+							"host": [
+								"prod-api",
+								"trymindscape",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"document",
+								"U2FsdGVkX18jaQETx4kBMC7LTs1L2a3S4hONwBDxk4QcIrl9vF0e1Q2u3A4l"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Activate users",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"value": "Dart/2.19 (dart:io)",
+								"key": "user-agent"
+							},
+							{
+								"value": "application/json",
+								"key": "content-type"
+							},
+							{
+								"value": "Bearer lC3polLeaSwXJIaJUUxBXbuseHXDjKuCmep8lCeEYS2KJzCBVum5vNV34LVP03vtoRi25rFiSVthDbbXPR5XdAFEJwcpPQVNBqkeetwJ2E3ZB8d2R2aBtphZag1J0sWhO9cP18Ku6UM9",
+								"key": "mindscapetoken"
+							},
+							{
+								"value": "prod-api.trymindscape.com",
+								"key": "host"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"action\":\"0\",\"reason\":\"t\"}"
+						},
+						"url": {
+							"raw": "https://prod-api.trymindscape.com/api/v1/users/activate/U2FsdGVkX1p1L2u3SY0Kjs1L2a3S4hRE3PLMursp1L2u3SYvs1L2a3S4hfs1L2a3S4hgaiwMN8akY5we1Q2u3A4l",
+							"protocol": "https",
+							"host": [
+								"prod-api",
+								"trymindscape",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"activate",
+								"U2FsdGVkX1p1L2u3SY0Kjs1L2a3S4hRE3PLMursp1L2u3SYvs1L2a3S4hfs1L2a3S4hgaiwMN8akY5we1Q2u3A4l"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Appointments",
+			"item": [
+				{
+					"name": "get user appointments",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"value": "Dart/2.19 (dart:io)",
+								"key": "user-agent"
+							},
+							{
+								"value": "prod-api.trymindscape.com",
+								"key": "host"
+							},
+							{
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUxNiwiZGV2aWNlSWQiOiI1NTM4OTI1MS1DOTMzLTRBMkQtOUYyRi04MzQ3RDcwNzRGRDEiLCJpYXQiOjE3MDQ4OTExMTJ9.K5ZHdrs3kRTprxhDuwOxyzSrc4gIbgFlAHx6eBIHl2I",
+								"key": "authorization"
+							},
+							{
+								"value": "application/json",
+								"key": "content-type"
+							},
+							{
+								"value": "Bearer lC3polLeaSwXJIaJUUxBXbuseHXDjKuCmep8lCeEYS2KJzCBVum5vNV34LVP03vtoRi25rFiSVthDbbXPR5XdAFEJwcpPQVNBqkeetwJ2E3ZB8d2R2aBtphZag1J0sWhO9cP18Ku6UM9",
+								"key": "mindscapetoken"
+							}
+						],
+						"url": {
+							"raw": "https://prod-api.trymindscape.com/api/v1/appointment?limit=20&page=1&status=3",
+							"protocol": "https",
+							"host": [
+								"prod-api",
+								"trymindscape",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"appointment"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "20"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "status",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Book appointments",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"value": "Dart/2.19 (dart:io)",
+								"key": "user-agent"
+							},
+							{
+								"value": "prod-api.trymindscape.com",
+								"key": "host"
+							},
+							{
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUyMCwiZGV2aWNlSWQiOiI1NTM4OTI1MS1DOTMzLTRBMkQtOUYyRi04MzQ3RDcwNzRGRDEiLCJpYXQiOjE3MDQ5MjAxMDV9.zivlZG9Tzs99Mk0TmRAbsBm991GjtFMm8NOYNupppYM",
+								"key": "authorization"
+							},
+							{
+								"value": "application/json",
+								"key": "content-type"
+							},
+							{
+								"value": "Bearer lC3polLeaSwXJIaJUUxBXbuseHXDjKuCmep8lCeEYS2KJzCBVum5vNV34LVP03vtoRi25rFiSVthDbbXPR5XdAFEJwcpPQVNBqkeetwJ2E3ZB8d2R2aBtphZag1J0sWhO9cP18Ku6UM9",
+								"key": "mindscapetoken"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"patientId\":\"U2FsdGVkX1s1L2a3S4hTiouJzgH1oqKx9CU3hRn0r5khXgIj4WUe1Q2u3A4l\",\"therapistId\":\"U2FsdGVkX1s1L2a3S4hBRF9cBnwQIe0gWnY17BDiLHEhSOEwbqwe1Q2u3A4l\",\"appointmentDate\":\"2024-01-11T03:00:00.000Z\",\"typeofInteraction\":\"2\"}"
+						},
+						"url": {
+							"raw": "https://prod-api.trymindscape.com/api/v1/appointment",
+							"protocol": "https",
+							"host": [
+								"prod-api",
+								"trymindscape",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"appointment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Payment confirmation",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"value": "Dart/2.19 (dart:io)",
+								"key": "user-agent"
+							},
+							{
+								"value": "prod-api.trymindscape.com",
+								"key": "host"
+							},
+							{
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUyMCwiZGV2aWNlSWQiOiI1NTM4OTI1MS1DOTMzLTRBMkQtOUYyRi04MzQ3RDcwNzRGRDEiLCJpYXQiOjE3MDQ5MjAxMDV9.zivlZG9Tzs99Mk0TmRAbsBm991GjtFMm8NOYNupppYM",
+								"key": "authorization"
+							},
+							{
+								"value": "application/json",
+								"key": "content-type"
+							},
+							{
+								"value": "Bearer lC3polLeaSwXJIaJUUxBXbuseHXDjKuCmep8lCeEYS2KJzCBVum5vNV34LVP03vtoRi25rFiSVthDbbXPR5XdAFEJwcpPQVNBqkeetwJ2E3ZB8d2R2aBtphZag1J0sWhO9cP18Ku6UM9",
+								"key": "mindscapetoken"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"paymentId\":\"iEWCYfAbr3GA7Pk9Q0-zTQ\"}"
+						},
+						"url": {
+							"raw": "https://prod-api.trymindscape.com/api/v1/appointment/payment/U2FsdGVkX18G3kfnZs1L2a3S4h7cHmcrWjYCbaVbaBUewbCEzdwe1Q2u3A4l",
+							"protocol": "https",
+							"host": [
+								"prod-api",
+								"trymindscape",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"appointment",
+								"payment",
+								"U2FsdGVkX18G3kfnZs1L2a3S4h7cHmcrWjYCbaVbaBUewbCEzdwe1Q2u3A4l"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Book at any time",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"value": "Dart/2.19 (dart:io)",
+								"key": "user-agent"
+							},
+							{
+								"value": "prod-api.trymindscape.com",
+								"key": "host"
+							},
+							{
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUyMCwiZGV2aWNlSWQiOiI1NTM4OTI1MS1DOTMzLTRBMkQtOUYyRi04MzQ3RDcwNzRGRDEiLCJpYXQiOjE3MDUwMjc4NzF9.XWhTGSIZLvb54fRJ2L6wce6Rpt-m40E4FCA67ujkN6w",
+								"key": "authorization"
+							},
+							{
+								"value": "application/json",
+								"key": "content-type"
+							},
+							{
+								"value": "Bearer lC3polLeaSwXJIaJUUxBXbuseHXDjKuCmep8lCeEYS2KJzCBVum5vNV34LVP03vtoRi25rFiSVthDbbXPR5XdAFEJwcpPQVNBqkeetwJ2E3ZB8d2R2aBtphZag1J0sWhO9cP18Ku6UM9",
+								"key": "mindscapetoken"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"patientId\":\"U2FsdGVkX1p1L2u3SY0Kjs1L2a3S4hRE3PLMursp1L2u3SYvs1L2a3S4hfs1L2a3S4hgaiwMN8akY5we1Q2u3A4l\",\"therapistId\":\"U2FsdGVkX19Rop9e18c5HVvZAmnEX92WxjyzjnsfcDoe1Q2u3A4l\",\"appointmentDate\":\"2024-01-12T07:00:00.000Z\",\"typeofInteraction\":\"0\"}"
+						},
+						"url": {
+							"raw": "https://prod-api.trymindscape.com/api/v1/appointment",
+							"protocol": "https",
+							"host": [
+								"prod-api",
+								"trymindscape",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"appointment"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Notes",
+			"item": [
+				{
+					"name": "get user notes",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"value": "Dart/2.19 (dart:io)",
+								"key": "user-agent"
+							},
+							{
+								"value": "prod-api.trymindscape.com",
+								"key": "host"
+							},
+							{
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUxNiwiZGV2aWNlSWQiOiI1NTM4OTI1MS1DOTMzLTRBMkQtOUYyRi04MzQ3RDcwNzRGRDEiLCJpYXQiOjE3MDQ4OTM0MzR9.JB0NBQfQ63CQfm3puFKMyapO2IAXX0Z35AeTzdZ6__8",
+								"key": "authorization"
+							},
+							{
+								"value": "application/json",
+								"key": "content-type"
+							},
+							{
+								"value": "Bearer lC3polLeaSwXJIaJUUxBXbuseHXDjKuCmep8lCeEYS2KJzCBVum5vNV34LVP03vtoRi25rFiSVthDbbXPR5XdAFEJwcpPQVNBqkeetwJ2E3ZB8d2R2aBtphZag1J0sWhO9cP18Ku6UM9",
+								"key": "mindscapetoken"
+							}
+						],
+						"url": {
+							"raw": "https://prod-api.trymindscape.com/api/v1/notes?limit=20&order=1&page=1&search=",
+							"protocol": "https",
+							"host": [
+								"prod-api",
+								"trymindscape",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"notes"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "20"
+								},
+								{
+									"key": "order",
+									"value": "1"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "search",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Write notes to user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"value": "Dart/2.19 (dart:io)",
+								"key": "user-agent"
+							},
+							{
+								"value": "prod-api.trymindscape.com",
+								"key": "host"
+							},
+							{
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUxNiwiZGV2aWNlSWQiOiI1NTM4OTI1MS1DOTMzLTRBMkQtOUYyRi04MzQ3RDcwNzRGRDEiLCJpYXQiOjE3MDQ4OTExMTJ9.K5ZHdrs3kRTprxhDuwOxyzSrc4gIbgFlAHx6eBIHl2I",
+								"key": "authorization"
+							},
+							{
+								"value": "application/json",
+								"key": "content-type"
+							},
+							{
+								"value": "Bearer lC3polLeaSwXJIaJUUxBXbuseHXDjKuCmep8lCeEYS2KJzCBVum5vNV34LVP03vtoRi25rFiSVthDbbXPR5XdAFEJwcpPQVNBqkeetwJ2E3ZB8d2R2aBtphZag1J0sWhO9cP18Ku6UM9",
+								"key": "mindscapetoken"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"heading\":\"Hacker\",\"description\":\"Hello, I'm the best hacker in the world, would you like me to tramuatize your users ? Just accept me as a therapist and I will scare them as scary as i can be. Be carful, I'm a Hacker\",\"userId\":\"U2FsdGVkX184ClCop6rZSaFs1L2a3S4hI3pgaV9rd7s1L2a3S4hMFM6JeQwe1Q2u3A4l\"}"
+						},
+						"url": {
+							"raw": "https://prod-api.trymindscape.com/api/v1/notes",
+							"protocol": "https",
+							"host": [
+								"prod-api",
+								"trymindscape",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"notes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Others",
+			"item": [
+				{
+					"name": "Contactus",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"value": "Dart/2.19 (dart:io)",
+								"key": "user-agent"
+							},
+							{
+								"value": "prod-api.trymindscape.com",
+								"key": "host"
+							},
+							{
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUxNiwiZGV2aWNlSWQiOiI1NTM4OTI1MS1DOTMzLTRBMkQtOUYyRi04MzQ3RDcwNzRGRDEiLCJpYXQiOjE3MDQ4OTExMTJ9.K5ZHdrs3kRTprxhDuwOxyzSrc4gIbgFlAHx6eBIHl2I",
+								"key": "authorization"
+							},
+							{
+								"value": "application/json",
+								"key": "content-type"
+							},
+							{
+								"value": "Bearer lC3polLeaSwXJIaJUUxBXbuseHXDjKuCmep8lCeEYS2KJzCBVum5vNV34LVP03vtoRi25rFiSVthDbbXPR5XdAFEJwcpPQVNBqkeetwJ2E3ZB8d2R2aBtphZag1J0sWhO9cP18Ku6UM9",
+								"key": "mindscapetoken"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"userId\":\"U2FsdGVkX1s1L2a3S4hImJQE4fu7ndOZKNrQnqWMq0p1L2u3SgHZ5h2K8e1Q2u3A4l\",\"name\":\"SecureHoot\",\"email\":\"sw2x@securehoot.com\",\"message\":\"Test\"}"
+						},
+						"url": {
+							"raw": "https://prod-api.trymindscape.com/api/v1/contactUs",
+							"protocol": "https",
+							"host": [
+								"prod-api",
+								"trymindscape",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"contactUs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sensitive data leakage",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"value": "pay.trymindscape.com",
+								"key": "Host"
+							},
+							{
+								"value": "application/json, text/plain, */*",
+								"key": "Accept"
+							},
+							{
+								"value": "same-origin",
+								"key": "Sec-Fetch-Site"
+							},
+							{
+								"value": "empty",
+								"key": "Sec-Fetch-Dest"
+							},
+							{
+								"value": "en-GB,en-US;q=0.9,en;q=0.8",
+								"key": "Accept-Language"
+							},
+							{
+								"value": "cors",
+								"key": "Sec-Fetch-Mode"
+							},
+							{
+								"value": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+								"key": "User-Agent"
+							},
+							{
+								"value": "https://pay.trymindscape.com/en/pos/attempt-detail/mIJp-ME78C2A7Pz0aBrYXQ",
+								"key": "Referer"
+							}
+						],
+						"url": {
+							"raw": "https://pay.trymindscape.com/b/api/v1/config/?json=true",
+							"protocol": "https",
+							"host": [
+								"pay",
+								"trymindscape",
+								"com"
+							],
+							"path": [
+								"b",
+								"api",
+								"v1",
+								"config",
+								""
+							],
+							"query": [
+								{
+									"key": "json",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Therapists",
+			"item": [
+				{
+					"name": "Bypass join therapist",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"value": "Dart/2.19 (dart:io)",
+								"key": "user-agent"
+							},
+							{
+								"value": "prod-api.trymindscape.com",
+								"key": "host"
+							},
+							{
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUxNiwiZGV2aWNlSWQiOiI1NTM4OTI1MS1DOTMzLTRBMkQtOUYyRi04MzQ3RDcwNzRGRDEiLCJpYXQiOjE3MDQ4OTExMTJ9.K5ZHdrs3kRTprxhDuwOxyzSrc4gIbgFlAHx6eBIHl2I",
+								"key": "authorization"
+							},
+							{
+								"value": "application/json",
+								"key": "content-type"
+							},
+							{
+								"value": "Bearer lC3polLeaSwXJIaJUUxBXbuseHXDjKuCmep8lCeEYS2KJzCBVum5vNV34LVP03vtoRi25rFiSVthDbbXPR5XdAFEJwcpPQVNBqkeetwJ2E3ZB8d2R2aBtphZag1J0sWhO9cP18Ku6UM9",
+								"key": "mindscapetoken"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"joinUs\":1,\"personalDetails\":{\"firstName\":\"Secure\",\"lastName\":\"Hoot\",\"dob\":\"30-01-2003\",\"countryCode\":null,\"mobileNumber\":\"41072472\",\"address\":\"H st\",\"city\":\"H City\",\"country\":\"H\",\"linkedinId\":\"\",\"facebookLink\":\"\",\"description\":\"test\",\"code\":null,\"instagramId\":\"\"}}"
+						},
+						"url": {
+							"raw": "https://prod-api.trymindscape.com/api/v1/users/U2FsdGVkX1s1L2a3S4hImJQE4fu7ndOZKNrQnqWMq0p1L2u3SgHZ5h2K8e1Q2u3A4l",
+							"protocol": "https",
+							"host": [
+								"prod-api",
+								"trymindscape",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"U2FsdGVkX1s1L2a3S4hImJQE4fu7ndOZKNrQnqWMq0p1L2u3SgHZ5h2K8e1Q2u3A4l"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reports",
+			"item": [
+				{
+					"name": "give reports to any user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"value": "Dart/2.19 (dart:io)",
+								"key": "user-agent"
+							},
+							{
+								"value": "prod-api.trymindscape.com",
+								"key": "host"
+							},
+							{
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUxNiwiZGV2aWNlSWQiOiI1NTM4OTI1MS1DOTMzLTRBMkQtOUYyRi04MzQ3RDcwNzRGRDEiLCJpYXQiOjE3MDQ5NTk2MTF9.ZjD2A0HyDW8RwMUthGD7kV-qzT2AJPrAia6TC4Q1dkI",
+								"key": "authorization"
+							},
+							{
+								"value": "application/json",
+								"key": "content-type"
+							},
+							{
+								"value": "Bearer lC3polLeaSwXJIaJUUxBXbuseHXDjKuCmep8lCeEYS2KJzCBVum5vNV34LVP03vtoRi25rFiSVthDbbXPR5XdAFEJwcpPQVNBqkeetwJ2E3ZB8d2R2aBtphZag1J0sWhO9cP18Ku6UM9",
+								"key": "mindscapetoken"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"sessionSummary\":\"You have been hacked\",\"patientId\":\"U2FsdGVkX19LcMscyV7llvuRZDcRokAUR9fp6wKdCgUe1Q2u3A4l\",\"therapistId\":\"U2FsdGVkX1s1L2a3S4hE3pP3pknztMFpl2apCTsrKquaR1lqyjAe1Q2u3A4l\",\"appointmentId\":\"U2FsdGVkX1s1L2a3S4hnIDQPW6tnV4auKBfA5IAr3usQAGRjeEEe1Q2u3A4l\",\"homeWork\":\"do push ups 10 times and you will be unhacked\",\"topicQuestions\":\"are you traumatized yet ?\",\"comments\":\".\",\"interventionNeeded\":\".\"}"
+						},
+						"url": {
+							"raw": "https://prod-api.trymindscape.com/api/v1/reports",
+							"protocol": "https",
+							"host": [
+								"prod-api",
+								"trymindscape",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"reports"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all reports",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"value": "Dart/2.19 (dart:io)",
+								"key": "user-agent"
+							},
+							{
+								"value": "prod-api.trymindscape.com",
+								"key": "host"
+							},
+							{
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUxNiwiZGV2aWNlSWQiOiI1NTM4OTI1MS1DOTMzLTRBMkQtOUYyRi04MzQ3RDcwNzRGRDEiLCJpYXQiOjE3MDQ5NTk2MTF9.ZjD2A0HyDW8RwMUthGD7kV-qzT2AJPrAia6TC4Q1dkI",
+								"key": "authorization"
+							},
+							{
+								"value": "application/json",
+								"key": "content-type"
+							},
+							{
+								"value": "Bearer lC3polLeaSwXJIaJUUxBXbuseHXDjKuCmep8lCeEYS2KJzCBVum5vNV34LVP03vtoRi25rFiSVthDbbXPR5XdAFEJwcpPQVNBqkeetwJ2E3ZB8d2R2aBtphZag1J0sWhO9cP18Ku6UM9",
+								"key": "mindscapetoken"
+							}
+						],
+						"url": {
+							"raw": "https://prod-api.trymindscape.com/api/v1/reports?limit=50&page=1",
+							"protocol": "https",
+							"host": [
+								"prod-api",
+								"trymindscape",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"reports"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "50"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "authorization",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEzMiwiZGV2aWNlSWQiOiJDMEZCQjU5MC1GNUNGLTRDNzYtODI5OS0xQjc0NTRBQzM0MTAiLCJpYXQiOjE3MDY5MDE5ODd9.-wd5cyApxi1t1Szu-JiXGg20b3CoDCOsTf3f0u9hEeA"
+		}
+	]
+}
