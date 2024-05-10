@@ -203,6 +203,20 @@ module.exports.findAllUsers = async (req) => {
 			limit: limitQuery,
 			offset: offset,
 			subQuery: false,
+			attributes: {
+				exclude: [
+					'appleId',
+					'facebookId',
+					'googleId',
+					'instagramId',
+					'linkedinId',
+					'deviceId',
+					'voIpToken',
+					'deviceId',
+					'deviceToken',
+					'civilId'
+				]
+			}
 		});
 
 		if (userData.count == 0) {
